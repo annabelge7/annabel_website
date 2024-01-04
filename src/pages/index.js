@@ -27,10 +27,11 @@ const HomeContainer = styled.div`
   background-color: #131d37;
   opacity: 1;
   position: relative;
-  animation: borderAnimation 5s infinite; /* Apply animation to the border */
+  border: 15px solid #241d28;
+  /*animation: borderAnimation 5s infinite;  Apply animation to the border */
 
 
-  /* Define the keyframe animation */
+  /* Define the keyframe animation 
   @keyframes borderAnimation {
     0% {
       border: 15px solid #241d28; /* Start border size and color */
@@ -47,7 +48,9 @@ const HomeContainer = styled.div`
     100% {
       border: 15px solid #6d5677; /* End border size and color */
     }
-  }
+  }*/
+
+  
 `;
 
 const LinkedInLink = styled.a`
