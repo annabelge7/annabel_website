@@ -344,11 +344,11 @@ const Home = () => {
                 </Paragraph>
                 
                 <Paragraph>
-                Over the past three years at Northwestern, I have been committed to enhancing my programming expertise, with a specific focus on cloud engineering and software design. I am very interetd in AI-driven solutions for renewable energy optimization, waste reduction, and eco-efficient urban planning, aiming to make a contribution towards a greener future.
+                Over the past three years at Northwestern, I have been committed to enhancing my programming expertise, with a specific focus on cloud engineering and software design. I am very interested in AI-driven solutions for renewable energy optimization, waste reduction, and eco-efficient urban planning, aiming to make a contribution towards a greener future.
                 </Paragraph>
 
                 <Paragraph>
-                When I am not coding or reading about AI, I like to spend my free time sailing, running, playing guitar, or doing anything outdoors. 
+                When I am not coding, I like spending my free time sailing, running, playing guitar, or doing anything outdoors. 
                 </Paragraph>
 
 
