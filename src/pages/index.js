@@ -27,7 +27,7 @@ const HomeContainer = styled.div`
   background-color: #131d37;
   opacity: 1;
   position: relative;
-  border: 20px solid #131d37;
+  border: 20px solid #957ca0;
 
 /*animation: borderAnimation 5s infinite;  Apply animation to the border */
 
