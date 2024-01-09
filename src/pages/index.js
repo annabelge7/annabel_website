@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+fimport React, { useState } from 'react';
 import { NavLink as Link } from "react-router-dom";
 import styled, { keyframes } from 'styled-components';
 import MouseSpotlight from './mouse';
@@ -362,7 +362,7 @@ const Home = () => {
                     </NavLink>{' '}
                     or{' '}
                     <NavLink to="/" style={{ fontWeight: 'bold' }}>
-                        projects
+                        projects{' '}
                     </NavLink>
                     in the menu to the left. 
                     </Paragraph>
