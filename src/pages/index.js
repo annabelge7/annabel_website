@@ -338,8 +338,8 @@ const Home = () => {
                 <Paragraph>
                 I am currently in my fourth year at Northwestern University, 
                 majoring in Computer Science and Environmental Policy.
-                My journey in programming began in 2020, when I developed my inaugural project:
-                a Tic-Tac-Toe game, using Python. Since then, I have been amazed by the endless possibilities that come with the ability to code. 
+                My journey in programming began in 2021, when I developed my inaugural project:
+                a Tic-Tac-Toe game using Python. Since then, I have been amazed by the endless possibilities that come with the ability to code. 
                 
                 </Paragraph>
                 
