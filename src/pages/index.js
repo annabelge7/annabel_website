@@ -337,8 +337,7 @@ const Home = () => {
                     or{' '}
                     <NavLink to="/" style={{ fontWeight: 'bold' }}>
                         projects
-                    </NavLink>
-                    in the menu to the left. 
+                    </NavLink> 
                     </Paragraph>
                     </div>
                 );
