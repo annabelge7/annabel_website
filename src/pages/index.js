@@ -27,30 +27,6 @@ const HomeContainer = styled.div`
   background-color: #131d37;
   opacity: 1;
   position: relative;
-  border: 20px solid #957ca0;
-
-/*animation: borderAnimation 5s infinite;  Apply animation to the border */
-
-
-  /* Define the keyframe animation 
-  @keyframes borderAnimation {
-    0% {
-      border: 15px solid #241d28; 
-    }
-    25% {
-      border: 15px solid #392d3e; 
-    }
-    50% {
-        border: 15px solid #43354a; 
-      }
-    75% {
-    border: 15px solid #584660; 
-    }
-    100% {
-      border: 15px solid #6d5677; 
-    }
-  }*/
-
 
   
 `;
