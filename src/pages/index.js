@@ -356,7 +356,7 @@ const Home = () => {
 
         <Name>Annabel Edwards</Name>
         <Bio>Software Engineer & Web Developer</Bio>
-        <Text>Norhtwestern Univeristy</Text>
+        <Text>Northwestern University</Text>
                 <LinkedInLink href="https://github.com/annabelge7" target="_blank">
                 <LinkedInLogo src={githubLogo} alt="GitHub Logo" />
             </LinkedInLink>
