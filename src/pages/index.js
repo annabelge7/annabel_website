@@ -27,6 +27,8 @@ const HomeContainer = styled.div`
   background-color: #131d37;
   opacity: 1;
   position: relative;
+
+  
 `;
 
 const LinkedInLink = styled.a`
@@ -312,8 +314,8 @@ const Home = () => {
                 <Paragraph>
                 I am currently in my fourth year at Northwestern University, 
                 majoring in Computer Science and Environmental Policy.
-                My journey in programming began in 2020, when I developed my inaugural project:
-                a Tic-Tac-Toe game, using Python. Since then, I have been amazed by the endless possibilities that come with the ability to code. 
+                My journey in programming began in 2021, when I developed my inaugural project:
+                a Tic-Tac-Toe game using Python. Since then, I have been amazed by the endless possibilities that come with the ability to code. 
                 
                 </Paragraph>
                 
@@ -322,7 +324,7 @@ const Home = () => {
                 </Paragraph>
 
                 <Paragraph>
-                When I am not coding, I like spending my free time sailing, running, playing guitar, or doing anything outdoors. 
+                 In my free time, you can find me sailing, running, playing guitar, and spending all my extra time outdoors. 
                 </Paragraph>
 
 
@@ -337,7 +339,7 @@ const Home = () => {
                     or{' '}
                     <NavLink to="/" style={{ fontWeight: 'bold' }}>
                         projects
-                    </NavLink> 
+                    </NavLink>
                     </Paragraph>
                     </div>
                 );
@@ -352,8 +354,8 @@ const Home = () => {
         <Section>
 
         <Name>Annabel Edwards</Name>
-        <Bio>Software Engineer & Web Developer</Bio>
-        <Text>Norhtwestern Univeristy</Text>
+        <Bio>Computer Science & Environmental Policy and Culture </Bio>
+        <Text>Northwestern University</Text>
                 <LinkedInLink href="https://github.com/annabelge7" target="_blank">
                 <LinkedInLogo src={githubLogo} alt="GitHub Logo" />
             </LinkedInLink>
