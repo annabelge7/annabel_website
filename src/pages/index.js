@@ -340,7 +340,6 @@ const Home = () => {
                     <NavLink to="/" style={{ fontWeight: 'bold' }}>
                         projects{' '}
                     </NavLink>
-                    in the menu to the left. 
                     </Paragraph>
                     </div>
                 );
@@ -355,7 +354,7 @@ const Home = () => {
         <Section>
 
         <Name>Annabel Edwards</Name>
-        <Bio>Software Engineer & Web Developer</Bio>
+        <Bio>Computer Science & Environmental Policy and Culture </Bio>
         <Text>Northwestern University</Text>
                 <LinkedInLink href="https://github.com/annabelge7" target="_blank">
                 <LinkedInLogo src={githubLogo} alt="GitHub Logo" />
