@@ -7,15 +7,16 @@ import githubLogo from './github.png';
 
 
 const NavLink = styled(Link)`
-color: #ABB7D8;
+color: black;
+font-weight: 700;
 &.active {
-	color: #63ABD1;
+	color: black;
     text-decoration: none;
 }
 text-decoration: none;
 
 &:hover {
-    color: #51D0DB;
+    color: orange;
     text-decoration: none;
   }
 
@@ -24,8 +25,8 @@ text-decoration: none;
 const HomeContainer = styled.div`
   color: white;
   display: flex;
-  background-color: #131d37;
   opacity: 1;
+  font-weight: 700;
   position: relative;
 
   
@@ -33,6 +34,7 @@ const HomeContainer = styled.div`
 
 const LinkedInLink = styled.a`
   color: white;
+  font-weight: 700;
   text-decoration: none; /* Remove underlines */
 `;
 
@@ -40,6 +42,7 @@ const LinkedInLogo = styled.img`
   width: 24px; /* Adjust the width to fit your design */
   padding: 6px;
   color: white;
+  font-weight: 700;
   margin-top: 5px;
 `;
 
@@ -50,6 +53,7 @@ const Section = styled.div`
 flex-direction: column;
 align-items: flex-start; /* Vertically align items */
 width: 100%; /* Ensure it spans the full width */
+
 
 @media (max-width: 1000px) { /* Adjust breakpoint as needed */
   flex-direction: column; /* Stack items vertically on smaller screens */
@@ -62,22 +66,25 @@ width: 100%; /* Ensure it spans the full width */
 
 const Header = styled.h2`
   margin: 0;
-  color: rgb(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 700;
 `;
 
 const Header2= styled.h2`
   margin-top: 30px;
-  color: rgb(255, 255, 255, 0.7);
+  color: white;
   margin-bottom: 0px;
+  font-weight: 700;
 `;
 
 const Paragraph = styled.p`
   padding-top: 10px;
   font-size: 16px;
   margin-top: 0;
+  font-weight: 700;
 
   padding-bottom: 0px;
-  color: #7683A7;
+  color: rgb(255, 255, 255, 0.7);
   line-height: 2.0; /* Set line spacing to 1.5 */
   
 `;
@@ -89,17 +96,19 @@ const Text = styled.p`
   margin-top: 0;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  color: #7683A7;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 0.8);
   line-height: 2.0; /* Set line spacing to 1.5 */
   
 `;
 
 const Bio = styled.h3`
   padding-top: 5px;
+  font-weight: 700;
   font-size: 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  color: rgb(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255, 0.8);
   
 `;
 
@@ -108,13 +117,15 @@ const Buttons = styled.div` // Changed from styled.p to styled.div for semantic 
     flex-direction: column;
     justify-content: space-between; // Correct property name
     width: 30%;
+    font-weight: 700;
     margin-top: 50px;
 `;
 
 const Button = styled.button`
-    color: #7683A7;
+color: rgb(255, 255, 255, 0.8);
     font-size: 17px;
     border: none;
+    font-weight: 700;
     padding: 5px;
     background-color: rgba(228, 192, 210, 0);
     text-align: left; // Align text to the left
@@ -123,7 +134,7 @@ const Button = styled.button`
 
     &:hover {
         transform: scale(1.3); // Grow the button on hover
-        color: #51D0DB;
+        color: orange;
 
         
     }
@@ -156,6 +167,7 @@ const Name = styled.h1`
   padding-right: 10%; /* Right padding is 10% of the container width */
   margin-bottom: 0px;
   padding-bottom: 0px;
+  font-weight: 700;
 `;
 
 const BioContainer = styled.div`
@@ -168,6 +180,7 @@ const BioContainer = styled.div`
   margin-left: 200px;
   margin-right: 10%;
   margin-bottom: 50px;
+  font-weight: 700;
 
   @media (max-width: 1000px) {
     margin-left: 0; /* Adjust margin for smaller screens */
@@ -193,27 +206,31 @@ const ProjectBox = styled.div`
 
   &:hover {
     transform: scale(1.1); // Grow the button on hover
-    background-color: rgb(255, 255, 255, 0.05);
+    color: black;
+    background-color: rgb(0, 0, 0, 0.8);
 }
 `;
 
 const Description = styled.p `
     padding-top: 0px;
     font-size: 13px;
+    font-weight: 700;
     margin-top: 0;
-    color: #7683A7;
+    color: white;
     margin-bottom: 0px;
 `;
 
 const Title = styled.p `
     margin: 0px;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
+    ont-weight: 700;
 `;
 
 const Date = styled.p `
     margin: 0px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    color: white;
+    ont-weight: 700;
 `;
 
 const Project = ({ title, job, date, description }) => (
@@ -328,7 +345,7 @@ const Home = () => {
                 </Paragraph>
 
 
-            
+{/*             
                 <Header2>Me in 10 minutes:</Header2>
                
                      <Paragraph>
@@ -340,7 +357,7 @@ const Home = () => {
                     <NavLink to="/" style={{ fontWeight: 'bold' }}>
                         projects
                     </NavLink>
-                    </Paragraph>
+                    </Paragraph> */}
                     </div>
                 );
       }
