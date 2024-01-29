@@ -233,13 +233,15 @@ const Date = styled.p `
     ont-weight: 700;
 `;
 
-const Project = ({ title, job, date, description }) => (
+const Project = ({ title, job, date, description, href }) => (
   <ProjectBox>
+    <a href={href} style={{ textDecoration: 'none', color: 'inherit' }}> 
     <Paragraph>
         <Title><strong>{title}</strong> - <i>{job}</i></Title>
         <Date><i>{date}</i></Date>
         <Description>{description}</Description>
     </Paragraph>
+    </a>
   </ProjectBox>
 );
 
@@ -270,6 +272,18 @@ const Home = () => {
           return  (
             <ProjectsContainer>
               <Project 
+                href="https://wildcatquest-b1eb7.web.app/"  
+                title="Wildcat Quest" 
+                description="
+                Collaboratively developed Wildcat Quest, a gamification web app to enhance student habits, leveraging Firebase for secure authentication, live user updates, and efficient data storage while using React to build an easily navigated interface. "
+              />
+              <Project 
+                href="https://www.wildhacks.net/"  
+                title="Wildhacks" 
+                job="Technology Team"
+                description="Northwestern Hackathon Website -- developed the landing page, navigation bar, and backend to hold user information from registration."
+              />
+              <Project 
                 title="GrooveVault" 
                 job="Northwestern University"
                 description="A cloud-based music application using AWS services for a serverless architecture, playlist and user data management, file storage, and client-side features for personalized playlist and song streaming."
@@ -281,7 +295,7 @@ const Home = () => {
               />
               <Project 
                 title="McGuireWoods Search Engine" 
-                job="Northwestern University"
+                job="McGuireWoods LLC"
                 description="Developed a specialized search engine for McGuireWoods LLP, designed for lawyers to extract FDA-related data and insights, and spearheaded the creation of its front-end interface and Flask-based server."
               />
                <Project 
