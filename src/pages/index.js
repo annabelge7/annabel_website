@@ -207,7 +207,7 @@ const ProjectBox = styled.div`
   &:hover {
     transform: scale(1.1); // Grow the button on hover
     color: black;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.5);
 }
 `;
 
@@ -274,12 +274,13 @@ const Home = () => {
               <Project 
                 href="https://wildcatquest-b1eb7.web.app/"  
                 title="Wildcat Quest" 
+                job="Northwestern University"
                 description="
                 Collaboratively developed Wildcat Quest, a gamification web app to enhance student habits, leveraging Firebase for secure authentication, live user updates, and efficient data storage while using React to build an easily navigated interface. "
               />
               <Project 
                 href="https://www.wildhacks.net/"  
-                title="Wildhacks" 
+                title="Wildhacks Website" 
                 job="Technology Team"
                 description="Northwestern Hackathon Website -- developed the landing page, navigation bar, and backend to hold user information from registration."
               />
