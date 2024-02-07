@@ -7,7 +7,7 @@ import githubLogo from './github.png';
 
 
 const NavLink = styled(Link)`
-color: black;
+color: white;
 font-weight: 700;
 &.active {
 	color: black;
@@ -402,6 +402,11 @@ const Home = () => {
                 <Paragraph>
                  In my free time, you can find me playing tennis, sailing, running, playing guitar, and spending any spare moment outdoors. 
                 </Paragraph>
+
+
+                <Header style={{marginTop: "30px"}}>Me in 10 minutes:</Header>
+                <Paragraph>View my full resume <NavLink  to="/resume">here</NavLink>.</Paragraph>
+
 
               </ProjectBox>
                 );

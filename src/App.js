@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 import Home from './pages';
+import Resume from './pages/Resume';
 // import About from './pages/about';
 // import Blogs from './pages/blogs';
 // import Interests from './pages/interests';
@@ -27,6 +28,7 @@ function App() {
             {/* <Navbar /> */}
             <Routes>
                 <Route exact path='/' exact element={<Home />} />
+                <Route path="/resume" element={<Resume />} />
    
             </Routes>
             </div>
