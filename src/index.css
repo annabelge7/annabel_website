@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-:root {
-  --darkgreen: #002400;
-  --lightgreen: #91a762;
-  --beige: #ede6d8;
-  --gold: #caa869;
-  --brown: #654221;
-  --red: #8b0101;
-  
-}
-
 
 /* 
 body {
@@ -93,18 +83,19 @@ code {
       transform: translateX(1);
   }
 } */
-
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 html {
   height:100%;
 }
 
 body {
   margin:0;
+  font-family: 'Lora', monospace;
 }
 
 .bg {
   animation:slide 6s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(112, 80, 125, 0.7) 50%, rgb(77, 122, 162, 0.7) 50%);
+  background-image: linear-gradient(-60deg, rgba(221, 196, 221, 0.5) 50%, rgba(79, 81, 125, 0.8) 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -137,7 +128,7 @@ body {
 }
 
 h1 {
-  font-family:monospace;
+  font-family: 'Lora', monospace;
 }
 
 @keyframes slide {
