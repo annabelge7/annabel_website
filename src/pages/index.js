@@ -62,6 +62,14 @@ width: 100%; /* Ensure it spans the full width */
 
 `;
 
+const AboutSection = styled.div`
+  margin-left: 300px;
+
+  @media (max-width: 1000px) { 
+  margin-left: 0px;
+}
+`;
+
 
 
 const Header = styled.h2`
@@ -82,7 +90,6 @@ const Paragraph = styled.p`
   font-size: 16px;
   margin-top: 0;
   font-weight: 700;
-
   padding-bottom: 0px;
   color: rgb(255, 255, 255, 0.7);
   line-height: 2.0; /* Set line spacing to 1.5 */
@@ -106,9 +113,17 @@ const Bio = styled.h3`
   padding-top: 5px;
   font-weight: 700;
   font-size: 20px;
+  width: 95%;
   margin-bottom: 0px;
   padding-bottom: 0px;
   color: rgb(255, 255, 255, 0.8);
+
+  @media (max-width: 1000px) {
+    margin-left: 0;  
+    margin-top: 10px;  
+    margin-right: 10px;
+    width: 80%
+}
   
 `;
 
@@ -168,6 +183,13 @@ const Name = styled.h1`
   margin-bottom: 0px;
   padding-bottom: 0px;
   font-weight: 700;
+
+  @media (max-width: 1000px) {
+    width: 70%
+    margin-right: 20px;
+    white-space: wrap;
+}
+
 `;
 
 const BioContainer = styled.div`
@@ -193,10 +215,11 @@ const BioContainer = styled.div`
 const ProjectBox = styled.div`
   border: 1px solid rgb(255, 255, 255, 0.3);
   padding: 10px;
-  padding-left: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   margin: 10px;
+  margin-right: 30px;
   width: 500px; // Adjust as needed
   height: 100; // Adjust as needed
   display: flex;
@@ -208,6 +231,13 @@ const ProjectBox = styled.div`
     transform: scale(1.1); // Grow the button on hover
     color: black;
     background-color: rgb(0, 0, 0, 0.5);
+  }
+
+    @media (max-width: 1000px) {
+      margin-left: 0;  
+      margin-top: 10px;  
+      margin-right: 10px;
+      width: 100%
 }
 `;
 
@@ -268,6 +298,15 @@ const Home = () => {
     // Render different content based on the current section
     const renderBioContent = () => {
       switch (currentSection) {
+        case 'contact':
+          return(
+
+            <ProjectBox style={{padding: "30px"}}>
+            <Header style={{ margin: "10px" }}>
+            Contact Feature Coming Soon!
+            </Header>
+            </ProjectBox>
+          );
         case 'projects':
           return  (
             <ProjectsContainer>
@@ -303,6 +342,11 @@ const Home = () => {
                 title="Photo App (Instagram Clone)" 
                 job="Northwestern University"
                 description="A full-stack photo-sharing web application, with database integration, a web server with user authentication,  user interface almost identical to Instagram, and deployed on Heroku using Flask & SQLAlchemy."
+              />
+               <Project 
+                title="2048 Clone" 
+                job="Northwestern University"
+                description="My own version of 2048 with all the same capabilities, coded in C++."
               />
             </ProjectsContainer>
           );
@@ -340,40 +384,26 @@ const Home = () => {
 
         default: // 'about'
           return (
-            <div>
+            <ProjectBox style={{padding: "30px"}}>
               <Header>Me in 10 seconds:</Header>
 
-                <Paragraph>
-                I am currently in my fourth year at Northwestern University, 
-                majoring in Computer Science and Environmental Policy.
+                <Paragraph>I am currently in my fourth year at Northwestern University, majoring in Computer Science and Environmental Policy.
                 My journey in programming began in 2021, when I developed my inaugural project:
                 a Tic-Tac-Toe game using Python. Since then, I have been amazed by the endless possibilities that come with the ability to code. 
                 
                 </Paragraph>
                 
                 <Paragraph>
-                Over the past three years at Northwestern, I have been committed to enhancing my programming expertise, with a specific focus on cloud engineering and software design. I am very interested in AI-driven solutions for renewable energy optimization, waste reduction, and eco-efficient urban planning, aiming to make a contribution towards a greener future.
+                Over the past three years at Northwestern, I have been committed to enhancing my programming expertise, 
+                with a specific focus on web development and software design. I am very interested in AI and software driven solutions for renewable energy optimization, waste reduction, 
+                and eco-efficient urban planning, aiming to make a contribution towards a greener future.
                 </Paragraph>
 
                 <Paragraph>
-                 In my free time, you can find me sailing, running, playing guitar, and spending all my extra time outdoors. 
+                 In my free time, you can find me playing tennis, sailing, running, playing guitar, and spending any spare moment outdoors. 
                 </Paragraph>
 
-
-{/*             
-                <Header2>Me in 10 minutes:</Header2>
-               
-                     <Paragraph>
-                    Checkout my{' '}
-                    <NavLink to="/" style={{ fontWeight: 'bold' }}>
-                        experiences
-                    </NavLink>{' '}
-                    or{' '}
-                    <NavLink to="/" style={{ fontWeight: 'bold' }}>
-                        projects
-                    </NavLink>
-                    </Paragraph> */}
-                    </div>
+              </ProjectBox>
                 );
       }
     };
@@ -385,6 +415,7 @@ const Home = () => {
         
         <Section>
 
+        <div>
         <Name>Annabel Edwards</Name>
         <Bio>Computer Science & Environmental Policy and Culture </Bio>
         <Text>Northwestern University</Text>
@@ -395,11 +426,13 @@ const Home = () => {
             <LinkedInLink href="https://www.linkedin.com/in/annabel-edwards-1302271a5/" target="_blank">
                 <LinkedInLogo src={linkedinLogo} alt="LinkedIn Logo" />
             </LinkedInLink>
+            </div>
 
         <Buttons>
         <Button onClick={() => handleSectionChange('about')}>About</Button>
         <Button onClick={() => handleSectionChange('projects')}>Projects</Button>
         <Button onClick={() => handleSectionChange('experiences')}>Experiences</Button>
+        <Button onClick={() => handleSectionChange('contact')}>Contact</Button>
         </Buttons>
 
 
